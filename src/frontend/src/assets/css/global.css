@@ -1,0 +1,238 @@
+/*sidebar custom*/
+.p-sidebar .p-sidebar-header {
+  padding: 0px;
+}
+
+.p-sidebar .p-sidebar-header+.p-sidebar-content {
+  background-color: #fff !important;
+  padding: 0px;
+}
+
+/*👉analisar
+.p-treenode👈*/
+
+.p-treenode {
+  width: 100%;
+}
+.p-treenode-content:hover {
+  color: var(--primary-color);
+}
+
+.p-treenode-label:hover {
+  color: var(--primary-color);
+}
+
+.custom-tree {
+  color: var(--primary-color);
+}
+
+.pi-reddit:before {
+  color: var(--primary-color);
+
+}
+
+.pi-whatsapp:before {
+  color: var(--primary-color);
+}
+
+.pi-pen-to-square:before {
+  color: var(--primary-color);
+}
+
+.pi-book:before,
+.pi-cog:before,
+.pi-sign-out:before,
+.pi-comments:before {
+  color: var(--primary-color);
+}
+
+.p-tree .p-tree-container .p-treenode .p-treenode-content .p-tree-toggler {
+  color: var(--primary-color);
+}
+
+.p-tree .p-tree-container .p-treenode .p-treenode-content {
+  border-radius: 0px;
+}
+
+.p-tree {
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: none;
+}
+
+.card .minimized {
+  width: 70px;
+  transform: translateY(1rem);
+}
+.card .maximized {
+ width: 100%;
+ margin: 1px 1px !important;
+}
+
+/*👉//div do hover do menu sidebar👈*/
+.p-tree-container {
+  width: 5.rem;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border-radius: none;
+}
+.p-tree-container > .p-treenode {
+  width: 100%;
+}
+.rootContent {
+  flex-grow: 1;
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.p-treenode-label:hover {
+  border-radius: 1px;
+}
+.maximized .p-tree {
+  width: 95%;
+
+
+}
+.maximized .p-tree-container {
+  width: 100%;
+  display: block;
+  gap: 1rem;
+}
+.maximized .p-treenode-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.minimized .p-treenode-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.minimized .p-treenode-content .p-treenode-label {
+  display: none;
+}
+
+.maximized .p-tree-toggler {
+  display: block;
+}
+.minimized .p-tree .p-tree-container .p-treenode .p-treenode-content .p-tree-toggler {
+  display: none;
+  margin: 0 auto;
+}
+
+.pi {
+  margin: 0;
+}
+
+.p-datatable .p-column-header-content {
+  display: flex !important;
+  align-items: center;
+justify-content: center;
+}
+
+.p-inputtextarea::placeholder {
+  color: #999; /* Ajuste a cor conforme necessário */
+  opacity: 1; /* Certifique-se de que o placeholder não está sendo escondido */
+}
+
+
+.custom-menu .p-menuitem-icon {
+  margin-right: 8px; /* Ajuste o valor conforme necessário */
+}
+
+
+@media screen and (max-width: 836px) {
+  .p-tree-container {
+    width: 8rem;
+  }
+/*👉  MOVIMETANÇAO MENU ITENS SIDEBAR MINIMIZED👈*/
+  .card .minimized {
+    width: 60px !important;
+  }
+  .minimized .p-treenode-content {
+    width: 70% ;
+  }
+/*👉  //HOVER DO MENUITENS SIDEBAR👈*/
+.minimized  .p-tree-container > .p-treenode {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 468px) {
+  .minimized .p-treenode-content {
+    width: 50%;
+  }
+  .card .minimized {
+    width: 70px !important;
+  }
+  .minimized  .p-tree-container > .p-treenode {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+    .minimized .p-treenode-content {
+      width: 50%;
+    }
+    .card .minimized {
+      width: 60px !important;
+    }
+    .minimized  .p-tree-container > .p-treenode {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 1024px) {
+    .minimized .p-treenode-content {
+      width: 50%;
+    }
+    .card .minimized {
+      width: 60px !important;
+    }
+    .minimized  .p-tree-container > .p-treenode {
+      width: 100%;
+    }
+    .p-tree .p-tree-container .p-treenode .p-treenode-content {
+        border-radius: 0px;
+        padding: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+      }
+  }
+
+  @media screen and (min-width: 2000px) {
+    .p-tree .p-tree-container .p-treenode .p-treenode-content {
+        border-radius: 0px;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+      }
+  }
+
+.paper {
+  flex-grow: 1;
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.sidebarMenuItensContainer .p-listbox .p-listbox-list-wrapper .p-listbox-list .p-listbox-item:hover {
+  background-color: #96ec9744 !important;
+  ;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.sidebarMenuItensContainer .p-listbox-list-wrapper,
+.sidebarMenuItensContainer .p-listbox,
+.sidebarMenuItensContainer .p-listbox-item {
+  background-color: transparent !important;
+  border: none;
+}

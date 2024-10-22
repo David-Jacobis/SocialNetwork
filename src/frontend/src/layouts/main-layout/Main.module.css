@@ -1,0 +1,483 @@
+.Main {
+  background-color: #fff !important;
+  /* background-image: url('../assets/img/FundoLogin.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  min-height: 92vh;
+  /* position: absolute; */
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 19px;
+  padding-top: 30px;
+
+}
+
+.sidebarToggleItens{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  transition: width 1s;
+  align-items: center;
+  position: sticky;
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+.spaContentWrapper{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.sidebarContainerMaximized {
+    background-color: #fff !important;
+    transition: width 1s;
+    border-right: 1px solid rgba(177, 171, 171, 0.801) !important;
+    width: 19.2%;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .sidebarContainerMinimized {
+    background-color: #fff !important;
+    transition: width 1s;
+    border-right: 1px solid rgba(177, 171, 171, 0.801) !important;
+    width: 5%;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .ContentRightPageSideMaximized {
+    transition: width 1s;
+    width: 80%;
+    margin-left: 20%;
+  }
+
+  .ContentRightPageSideMinimized {
+    transition: width 1s;
+    width: 95%;
+    margin-left: 5%;
+  }
+
+.replyLogoTopMaximized{
+  margin-left: 15%;
+  width: 75%;
+  transition: width 1s;
+}
+.replyLogoTopMinimized{
+  margin-left: 5%;
+  width: 0%;
+  transition: width 1s;
+}
+.replyLogoBottomMaximized{
+  transition: width 1s;
+  max-height: 100%;
+  width: 100%;
+}
+.replyLogoBottomMinimized{
+  margin-left: 5%;
+  width: 0%;
+  transition: width 1s;
+}
+
+@keyframes slideIn {
+    from {
+      right: 180px; /* Define a posição inicial fora da tela */
+    }
+    to {
+      right: 0px; /* Define a posição final na tela */
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      right: -180.5px; /* Define a posição inicial na tela */
+    }
+    to {
+      right: -1.5px; /* Define a posição final fora da tela */
+    }
+  }
+
+  .toggleButtonOpen {
+    background-color: #0011fd8e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 79%;
+    animation: slideIn 1s forwards; /* Aplica a animação slideIn */
+  }
+
+  .toggleButtonClosed {
+    background-color: #0011fd8e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 94.5%;
+    animation: slideOut 1s forwards;
+  }
+
+.toggleButtonOpen {
+  transform: translateX(0);
+}
+
+.toggleButtonClose {
+  transform: translateX(calc(100% - 37px));
+}
+
+.SideBarItens{
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 1920px) {
+ .SideBarItens {
+    height: 80%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 999;
+ }
+ .sidebarContainerMinimized {
+  width: 2.5%;
+}
+
+.ContentRightPageSideMaximized {
+  transition: width 1s;
+  width: 80%;
+  margin-left: 16.5%;
+}
+
+.sidebarContainerMaximized {
+  width: 15%;
+}
+.toggleButtonOpen {
+    background-color: #0011fd8e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 86.7%;
+    animation: slideIn 1s forwards; /* Aplica a animação slideIn */
+  }
+
+  .toggleButtonClosed {
+    background-color: #0011fd8e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 97.6%;
+    animation: slideOut 1s forwards; /* Aplica a animação slideOut */
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .SideBarItens {
+    height: 80%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 999;
+}
+.ContentRightPageSideMaximized {
+  transition: width 1s;
+  width: 80%;
+  margin-left: 20%;
+}
+.sidebarContainerMinimized {
+  width: 5.8% !important;
+}
+
+.sidebarContainerMaximized {
+  width: 20%;
+}
+.toggleButtonOpen {
+    background-color: #0011fd8e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 80.1%;
+    animation: slideIn 1s forwards; /* Aplica a animação slideIn */
+  }
+
+  .toggleButtonClosed {
+    background-color: #0011fd8e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 94.4%;
+    animation: slideOut 1s forwards; /* Aplica a animação slideOut */
+  }
+}
+@media screen and (max-width: 836px)  {
+    .SideBarItens {
+        height: 80%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        z-index: 999;
+    }
+  .sidebarContainerMaximized {
+    width: 27%;
+  }
+  .sidebarContainerMinimized {
+    width: 7.2%;
+  }
+  .toggleButtonOpen {
+    background-color: #0011fd8e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 73.1%;
+    animation: slideIn 1s forwards; /* Aplica a animação slideIn */
+  }
+
+  .toggleButtonClosed {
+    background-color: #0011fd8e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 94.3%;
+    animation: slideOut 1s forwards; /* Aplica a animação slideOut */
+  }
+
+}
+
+@media screen and (max-width: 468px)  {
+  .sidebarContainerMinimized {
+    width: 16% !important;
+  }
+  .sidebarContainerMaximized {
+    width: 64%;
+  }
+  .Main {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .card .minimized {
+    width: 60px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 1024px) {
+    .SideBarItens {
+        min-height: 91%;
+        overflow: hidden;
+     }
+    /*👉 .sidebarContainerMinimized {
+      width: 5.2%;
+    }
+    .sidebarContainerMaximized {
+      width: 22.3%;
+    }👈*/
+    .sidebarContainerMinimized {
+      width: 6% !important;
+    }
+
+    .sidebarContainerMaximized {
+      width: 27%;
+    }
+    .toggleButtonOpen {
+        background-color: #0011fd8e;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 27px;
+        height: 27px;
+        text-align: center;
+        font-size: 16px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-right: 73%;
+        animation: slideIn 1s forwards; /* Aplica a animação slideIn */
+      }
+
+      .toggleButtonClosed {
+        background-color: #0011fd8e;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 27px;
+        height: 27px;
+        text-align: center;
+        font-size: 16px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-right: 94.2%;
+        animation: slideOut 1s forwards; /* Aplica a animação slideOut */
+      }
+    }
+
+.SidebarDivContainerBottomImage{
+    height: 10%;
+}
+
+.SidebarDivContainerTopImage{
+    height: 10%;
+}
+.toggleButtonInitial {
+    background-color: #0011fd8e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 100%;
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2500px){
+    .SideBarItens {
+        height: 80%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        z-index: 999;
+    }
+    .sidebarContainerMaximized {
+        width: 18%;
+      }
+      .sidebarContainerMinimized {
+        width: 5.2%;
+      }
+      .toggleButtonOpen {
+        background-color: #0011fd8e;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 27px;
+        height: 27px;
+        text-align: center;
+        font-size: 16px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-right: 82%;
+        animation: slideIn 1s forwards; /* Aplica a animação slideIn */
+      }
+
+      .toggleButtonClosed {
+        background-color: #0011fd8e;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 27px;
+        height: 27px;
+        text-align: center;
+        font-size: 16px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-right: 94.85%;
+        animation: slideOut 1s forwards; /* Aplica a animação slideOut */
+      }
+}
+
+@media screen and (min-width: 2501px){
+    .SideBarItens {
+        height: 80%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        z-index: 999;
+    }
+    .sidebarContainerMaximized {
+        width: 20%;
+      }
+      .sidebarContainerMinimized {
+        width: 5.2%;
+      }
+      .toggleButtonOpen {
+        background-color: #0011fd8e;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 27px;
+        height: 27px;
+        text-align: center;
+        font-size: 16px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-right: 80.05%;
+        animation: slideIn 1s forwards; /* Aplica a animação slideIn */
+      }
+
+      .toggleButtonClosed {
+        background-color: #0011fd8e;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 27px;
+        height: 27px;
+        text-align: center;
+        font-size: 16px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-right: 94.85%;
+        animation: slideOut 1s forwards; /* Aplica a animação slideOut */
+      }
+}

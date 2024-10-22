@@ -1,0 +1,16 @@
+.header_tittle {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+}
+
+.button {
+  background-color: var(--primary-color) !important;
+  max-width: 100px;
+}
+.button:hover {
+  background-color: #155f17 !important;
+}
+
+.text {
+  font-size: 1.4rem;
+}

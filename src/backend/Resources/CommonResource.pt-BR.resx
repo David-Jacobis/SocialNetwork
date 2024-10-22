@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <!--
+      Microsoft ResX Schema
+
+      Version 2.0
+
+      The primary goals of this format is to allow a simple XML format
+      that is mostly human readable. The generation and parsing of the
+      various data types are done through the TypeConverter classes
+      associated with the data types.
+
+      Example:
+
+      ... ado.net/XML headers & schema ...
+      <resheader name="resmimetype">text/microsoft-resx</resheader>
+      <resheader name="version">2.0</resheader>
+      <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+      <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+      <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+      <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+      <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+          <value>[base64 mime encoded serialized .NET Framework object]</value>
+      </data>
+      <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+          <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+          <comment>This is a comment</comment>
+      </data>
+
+      There are any number of "resheader" rows that contain simple
+      name/value pairs.
+
+      Each data row contains a name, and value. The row also contains a
+      type or mimetype. Type corresponds to a .NET class that support
+      text/value conversion through the TypeConverter architecture.
+      Classes that don't support this are serialized and stored with the
+      mimetype set.
+
+      The mimetype is used for serialized objects, and tells the
+      ResXResourceReader how to depersist the object. This is currently not
+      extensible. For a given mimetype the value must be set accordingly:
+
+      Note - application/x-microsoft.net.object.binary.base64 is the format
+      that the ResXResourceWriter will generate, however the reader can
+      read any of the formats listed below.
+
+      mimetype: application/x-microsoft.net.object.binary.base64
+      value   : The object must be serialized with
+              : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+              : and then encoded with base64 encoding.
+
+      mimetype: application/x-microsoft.net.object.soap.base64
+      value   : The object must be serialized with
+              : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+              : and then encoded with base64 encoding.
+
+      mimetype: application/x-microsoft.net.object.bytearray.base64
+      value   : The object must be serialized into a byte array
+              : using a System.ComponentModel.TypeConverter
+              : and then encoded with base64 encoding.
+      -->
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complexType>
+                            <xsd:attribute name="alias" type="xsd:string" />
+                            <xsd:attribute name="name" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="DefaultError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+    <data name="DefaultSuccess" xml:space="preserve">
+    <value>Sucesso.</value>
+  </data>
+    <data name="errorFetchingSearchUser" xml:space="preserve">
+    <value>Erro ao realizar busca de usuário</value>
+  </data>
+    <data name="successFetchingProfile" xml:space="preserve">
+    <value>Perfis Retornados</value>
+  </data>
+    <data name="errorFetchingProfile" xml:space="preserve">
+    <value>Erro ao retornar Perfis</value>
+  </data>
+    <data name="successCreateProfile" xml:space="preserve">
+    <value>Sucesso ao Criar Perfil</value>
+  </data>
+    <data name="successUpdateProfile" xml:space="preserve">
+    <value>Sucesso ao Editar Perfil</value>
+  </data>
+    <data name="errorUpdateProfile" xml:space="preserve">
+    <value>Erro ao Editar perfil, pois possui código existente</value>
+  </data>
+    <data name="errorUpdateProfileFetch" xml:space="preserve">
+    <value>Erro ao Editar perfil, pois não foi encontrado um perfil para Editar</value>
+  </data>
+    <data name="successDeleteProfile" xml:space="preserve">
+    <value>Sucesso ao Deletar Perfil</value>
+  </data>
+    <data name="errorDeleteProfile" xml:space="preserve">
+    <value>Erro ao Deletar perfil</value>
+  </data>
+    <data name="errorDeleteProfilFetch" xml:space="preserve">
+    <value>Erro ao Deletar perfil, pois não foi encontrado um perfil para Deletar </value>
+  </data>
+    <data name="FixedLength" xml:space="preserve">
+    <value>O campo {0} deve ter {1} caracteres.</value>
+  </data>
+    <data name="Informed" xml:space="preserve">
+    <value>deve ser informado.</value>
+  </data>
+    <data name="loginError" xml:space="preserve">
+    <value>Erro ao efetuar Login</value>
+  </data>
+    <data name="loginSucesso" xml:space="preserve">
+    <value>Login efetuado com sucesso</value>
+  </data>
+    <data name="SignInError" xml:space="preserve">
+    <value>Erro ao criar usuário</value>
+  </data>
+    <data name="SignInSucess" xml:space="preserve">
+    <value>Usuário criado com sucesso</value>
+  </data>
+    <data name="sucessSearchUser" xml:space="preserve">
+    <value>Busca de usuário realizada com sucesso</value>
+  </data>
+    <data name="UserUpdated" xml:space="preserve">
+    <value>Usuário atualizado com sucesso</value>
+  </data>
+    <data name="UserNotUpdated" xml:space="preserve">
+    <value>Usuário não foi atualizado</value>
+  </data>
+    <data name="NickNameNull" xml:space="preserve">
+    <value>Apelido não pode ser vazio</value>
+  </data>
+    <data name="FormNull" xml:space="preserve">
+    <value>Formulario não permite campos vazios</value>
+  </data>
+    <data name="JiraConfigisNull" xml:space="preserve">
+    <value>Usuario não possui configuração do Jira!</value>
+  </data>
+    <data name="NoActiveConfiguration" xml:space="preserve">
+    <value>Usuário não possui configuração ativa</value>
+  </data>
+    <data name="JiraDescriptionError" xml:space="preserve">
+    <value>A descrição e título da estória é obrigatória. Por favor, preencha o campo de descrição e título antes de salvar.</value>
+  </data>
+    <data name="ServiceIdIsNull" xml:space="preserve">
+    <value>O ID do serviço não pode ser nulo.</value>
+  </data>
+    <data name="SystemDefaultInstrunctionPrompt" xml:space="preserve">
+    <value>Escreva critérios de aceitação para uma história ágil, incluindo pelo menos 5 itens. Forneça o título da história, a descrição e os critérios de aceitação. Não devolva as tarefas, cenários, exemplos ou notas. Ao fornecer o título, a descrição e os critérios de aceitação, inclua apenas uma história de usuário. Se a história do usuário já estiver completa com exatamente a mesma descrição, gere uma nova história com título e critérios de aceitação diferentes.Não é necessário perguntar se o usuario precisa de mais alguma coisa, a ultima frase do texto gerado deve ser o ultimo criterio de aceitação. DON'T type "Let me know if you need anything else!"Escreva critérios de aceitação para uma história ágil, incluindo pelo menos 5 itens. Forneça o título da história, a descrição e os critérios de aceitação. Não devolva as tarefas, cenários, exemplos ou notas. Ao fornecer o título, a descrição e os critérios de aceitação, inclua apenas uma história de usuário. Se a história do usuário já estiver completa com exatamente a mesma descrição, gere uma nova história com título e critérios de aceitação diferentes.Não é necessário perguntar se o usuario precisa de mais alguma coisa, a ultima frase do texto gerado deve ser o ultimo criterio de aceitação. Não digite "Let me know if you need anything else!"</value>
+  </data>
+    <data name="MessageTwilioIaPedingResponse" xml:space="preserve">
+    <value>Por favor aguarde o retorno para enviar novas mensagens. Estamos processando a sua solicitação e já retornamos com as informações solicitadas.</value>
+  </data>
+    <data name="MessageTwilioKnowledgeBaseSearch" xml:space="preserve">
+    <value>Estamos processando sua ultima solicitação, aguarde um momento.</value>
+  </data>
+    <data name="MessageTwilioErrorResponse" xml:space="preserve">
+    <value>Desculpe não entendi, por favor me de mais detalhes sobre oque deseja saber.</value>
+  </data>
+</root>

@@ -1,0 +1,15 @@
+{
+    "options":{
+        "signout":"Sair",
+        "Signin": "Logar",
+        "Email": "E-mail",
+        "Password": "Senha",
+        "RememberMe": "Manter Conectado",
+        "ForgotPassword": "Esqueceu a senha?",
+        "userName": "Usuario",
+        "dashboard": "Dashboard",
+        "users": "Users",
+        "home": "Home",
+        "config": "Configurações"
+    }
+}

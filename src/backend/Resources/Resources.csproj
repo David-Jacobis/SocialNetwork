@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup Label="Globals">
+      <SccProjectName>%24/Reply Callidus Story/Development/Backend_v2/Resources</SccProjectName>
+      <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+      <SccAuxPath>http://tfsherbr.replynet.prv:8080/tfs/defaultcollection</SccAuxPath>
+      <SccLocalPath>.</SccLocalPath>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Hangfire" Version="1.8.14" />
+        <PackageReference Include="Hangfire.Core" Version="1.8.14" />
+        <PackageReference Include="Hangfire.SqlServer" Version="1.8.14" />
+        <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="3.1.11" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="ErrorResource.cs">
+        <Generator>ResXFileCodeGenerator</Generator>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Update="CommonResource.pt-BR.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+        </EmbeddedResource>
+        <EmbeddedResource Update="CommonResource.es-AR.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+        </EmbeddedResource>
+        <EmbeddedResource Update="CommonResource.en-US.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+        </EmbeddedResource>
+        <EmbeddedResource Update="ErrorResource.es-AR.resx">
+          <Generator>PublicResXFileCodeGenerator</Generator>
+        </EmbeddedResource>
+        <EmbeddedResource Update="ErrorResource.pt-BR.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+        </EmbeddedResource>
+    </ItemGroup>
+
+</Project>

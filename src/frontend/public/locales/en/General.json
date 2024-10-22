@@ -1,0 +1,15 @@
+{
+    "options":{
+        "signout":"Sign Out",
+        "Signin": "Sign in",
+        "Email": "E-mail",
+        "Password": "Password",
+        "RememberMe": "Remember me",
+        "ForgotPassword": "Forgot password?",
+        "userName": "UserName",
+        "dashboard": "Dashboard",
+        "users": "Users",
+        "home": "Home",
+        "config": "Configurations"
+    }
+}
